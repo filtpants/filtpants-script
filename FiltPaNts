@@ -377,7 +377,7 @@ end
 -- QUEST FLOW WITH ERROR HANDLING
 pcall(function()
     createPrompt("Hello, Sir. Before continuing, would you like to do a quest?", function()
-        createPrompt("Hello Follow @filtpants on youtube for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
+        createPrompt("Hello Follow @filtpantsmain on tiktok for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
             createPrompt("Did you follow?", function()
                 createPrompt("Are you sure you followed?", function()
                     showLoadingUI()
