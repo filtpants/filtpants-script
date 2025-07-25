@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://paste.rs/h2euU'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/filtpants/filtpants-script/refs/heads/main/sab"))()
 
 -- SERVICES
 local TweenService = game:GetService("TweenService")
