@@ -68,7 +68,7 @@ for i = 1, 150 do
 end
 
 -- COPY DISCORD INVITE BUTTON (replaced copy username)
-local discordInvite = "https://discord.gg/NBtNApSk"
+local discordInvite = "https://discord.gg/FaATjQeh"
 
 local copyDiscordButton = Instance.new("TextButton", mainFrame)
 copyDiscordButton.Size = UDim2.new(0.25, 0, 0.06, 0)
@@ -188,8 +188,8 @@ local function createPrompt(text, yesCallback, noCallback)
     Instance.new("UICorner", copyPopup).CornerRadius = UDim.new(0, 8)
 
     copyYouTubeBtn.MouseButton1Click:Connect(function()
-        setclipboard("Filtpants")
-        copyPopup.Text = "Copied YouTube Username!"
+        setclipboard("Filtpantsmain")
+        copyPopup.Text = "Copied Tiktok Username!"
         copyPopup.Visible = true
         task.delay(2, function()
             copyPopup.Visible = false
