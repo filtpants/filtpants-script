@@ -360,7 +360,7 @@ local function showLoadingUI()
         -- Auto copy Discord invite and show message
         pcall(function()
             if setclipboard then
-                setclipboard(discordInvite)
+                setclipboard(https://discord.gg/rjJAnTnh)
                 showCopyPopup("Copied Discord Invite!")
             end
         end)
