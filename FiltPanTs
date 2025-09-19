@@ -93,7 +93,7 @@ for i = 1, 150 do
 end
 
 -- COPY DISCORD INVITE BUTTON
-local discordInvite = "https://discord.gg/A65B7WSw"
+local discordInvite = "https://discord.gg/MvVBAxhQyR"
 
 local copyDiscordButton = Instance.new("TextButton")
 copyDiscordButton.Name = "CopyDiscordButton"
@@ -238,7 +238,7 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.Name = "CopyYouTubeButton"
     copyYouTubeBtn.Size = UDim2.new(0.45, 0, 0.15, 0)
     copyYouTubeBtn.Position = UDim2.new(0.5, 0, 0.75, 0)
-    copyYouTubeBtn.Text = "Copy YouTube Username"
+    copyYouTubeBtn.Text = "Copy Tiktok Username"
     copyYouTubeBtn.BackgroundColor3 = Color3.fromRGB(255, 100, 0)
     copyYouTubeBtn.TextColor3 = Color3.new(1, 1, 1)
     copyYouTubeBtn.Font = Enum.Font.GothamBold
@@ -271,8 +271,8 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.MouseButton1Click:Connect(function()
         pcall(function()
             if setclipboard then
-                setclipboard("Filtpants")
-                copyPopup.Text = "Copied YouTube Username!"
+                setclipboard("scriptsfor_rblx")
+                copyPopup.Text = "Copied Tiktok Username!"
                 copyPopup.Visible = true
                 task.delay(2, function()
                     if copyPopup then
