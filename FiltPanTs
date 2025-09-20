@@ -271,8 +271,8 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.MouseButton1Click:Connect(function()
         pcall(function()
             if setclipboard then
-                setclipboard("scriptsfor_rblx")
-                copyPopup.Text = "Copied Tiktok Username!"
+                setclipboard("filtpants")
+                copyPopup.Text = "Copied Youtube Username!"
                 copyPopup.Visible = true
                 task.delay(2, function()
                     if copyPopup then
@@ -378,7 +378,7 @@ end
 -- QUEST FLOW WITH ERROR HANDLING
 pcall(function()
     createPrompt("Hello, Sir. Before continuing, would you like to do a quest?", function()
-        createPrompt("Hello Follow @scriptsfor_rblx on tiktok for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
+        createPrompt("Hello Follow @filtpants on youtube for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
             createPrompt("Did you follow?", function()
                 createPrompt("Are you sure you followed?", function()
                     showLoadingUI()
