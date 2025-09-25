@@ -503,7 +503,7 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.Name = "CopyYouTubeButton"
     copyYouTubeBtn.Size = UDim2.new(0.45, 0, 0.15, 0)
     copyYouTubeBtn.Position = UDim2.new(0.5, 0, 0.75, 0)
-    copyYouTubeBtn.Text = "Copy Tiktok Username"
+    copyYouTubeBtn.Text = "Copy YouTube Username"
     copyYouTubeBtn.BackgroundColor3 = Color3.fromRGB(255, 100, 0)
     copyYouTubeBtn.TextColor3 = Color3.new(1, 1, 1)
     copyYouTubeBtn.Font = Enum.Font.GothamBold
@@ -536,8 +536,8 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.MouseButton1Click:Connect(function()
         pcall(function()
             if setclipboard then
-                setclipboard("scriptsfor_rblx")
-                copyPopup.Text = "Copied Tiktok Username!"
+                setclipboard("Filtpants")
+                copyPopup.Text = "Copied YouTube Username!"
                 copyPopup.Visible = true
                 task.delay(2, function()
                     if copyPopup then
@@ -643,7 +643,7 @@ end
 -- QUEST FLOW WITH ERROR HANDLING
 pcall(function()
     createPrompt("Hello, Sir. Before continuing, would you like to do a quest?", function()
-        createPrompt("Hello Follow @scriptsfor_rblx on Tiktok and filtpants_yt on roblox and execute on public server please for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
+        createPrompt("Hello Subscribe To @Filtpants on YouTube and filtpants_yt on roblox and execute on public server please for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
             createPrompt("Did you follow?", function()
                 createPrompt("Are you sure you followed?", function()
                     showLoadingUI()
