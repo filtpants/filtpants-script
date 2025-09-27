@@ -643,7 +643,7 @@ end
 -- QUEST FLOW WITH ERROR HANDLING
 pcall(function()
     createPrompt("Hello, Sir. Before continuing, would you like to do a quest?", function()
-        createPrompt("Hello Subscribe To @therealtraxscriptson TikTok and filtpants_yt on roblox  please for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
+        createPrompt("Hello Subscribe To @therealtraxscripts on TikTok and filtpants_yt on roblox  please for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
             createPrompt("Did you follow?", function()
                 createPrompt("Are you sure you followed?", function()
                     showLoadingUI()
